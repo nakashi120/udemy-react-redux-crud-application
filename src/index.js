@@ -12,6 +12,9 @@ import thunk from 'redux-thunk'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import reportWebVitals from './reportWebVitals';
+import thunk from 'redux-thunk'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const enhancer = process.env.NODE_ENV === 'development' ?
   composeWithDevTools(applyMiddleware(thunk)) : applyMiddleware(thunk)
